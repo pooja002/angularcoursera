@@ -59,7 +59,7 @@
                 <mat-list-item *ngFor="let comment of dish.comments" style="margin-bottom: 20px;">
                     <p>{{comment.comment}} <br>     
                    {{comment.rating}}  stars <br>
-                    --{{comment.author }}  {{today| date: 'dd/MM/yyyy'}}<br> </p>
+                    --{{comment.author }}  {{comment.date| date: 'dd/MM/yyyy'}}<br> </p>
                     <pre></pre>
                    
             </mat-list-item>
